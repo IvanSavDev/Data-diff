@@ -1,4 +1,4 @@
-const formatingDate = (dateForPath1, dateForPath2, keys) => {
+const getData = (dateForPath1, dateForPath2, keys) => {
   const arrayResult = ['{'];
   keys.forEach((key) => {
     if (Object.hasOwn(dateForPath1, key) && Object.hasOwn(dateForPath2, key)) {
@@ -20,9 +20,15 @@ const formatingDate = (dateForPath1, dateForPath2, keys) => {
   });
   arrayResult.push('}');
 
+  return arrayResult;
+};
+
+const formatingData = (dateForPath1, dateForPath2, keys) => {
+  const values = getData(dateForPath1, dateForPath2, keys);
   let resultCompare = '';
-  arrayResult.forEach((element, index) => {
-    if (index === arrayResult.length - 1) {
+
+  values.forEach((element, index) => {
+    if (index === values.length - 1) {
       resultCompare += `${element}`;
       return;
     }
@@ -32,4 +38,4 @@ const formatingDate = (dateForPath1, dateForPath2, keys) => {
   return resultCompare;
 };
 
-export default formatingDate;
+export default formatingData;
