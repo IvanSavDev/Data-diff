@@ -3,13 +3,8 @@ import path from 'path';
 import { readFileSync } from 'fs';
 import gendiff from '../src/index.js';
 
-let __filename;
-let __dirname;
-
-beforeAll(() => {
-  __filename = fileURLToPath(import.meta.url);
-  __dirname = path.dirname(__filename);
-});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const getFixturePath = (fileName) => path.join(__dirname, '..', '__fixtures__', fileName);
 const readFile = (fileName) => readFileSync(getFixturePath(fileName), 'UTF-8');
