@@ -3,7 +3,7 @@ import path from 'path';
 import process from 'process';
 import parse from './parser.js';
 import diff from './diff.js';
-import format from './formatters/format.js';
+import getFormat from './formatters/index.js';
 
 const gendiff = (filepath1, filepath2, formatName = 'stylish') => {
   const path1 = path.resolve(process.cwd(), filepath1);
@@ -13,7 +13,7 @@ const gendiff = (filepath1, filepath2, formatName = 'stylish') => {
   const dateForPath1 = parse(path1, readFile1);
   const dateForPath2 = parse(path2, readFile2);
   const resultDiff = diff(dateForPath1, dateForPath2);
-  return format(resultDiff, formatName);
+  return getFormat(resultDiff, formatName);
 };
 
 export default gendiff;
