@@ -16,3 +16,7 @@
 ## Plain format
 
 [![asciicast](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5.svg)](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5)
+
+## JSON format
+
+[![asciicast](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU.svg)](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU)
