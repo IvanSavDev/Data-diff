@@ -15,6 +15,9 @@ const getFixturePath = (fileName, folder) => path.join(__dirname, '..', '__fixtu
 const readFile = (fileName, folder) => readFileSync(getFixturePath(fileName, folder), 'UTF-8');
 
 test.each([
+  ['filepath1.json', 'filepath2.json', 'expect_file_json.txt', 'flat_file'],
+  ['filepath1.yml', 'filepath2.yml', 'expect_file_yaml.txt', 'flat_file'],
+  ['filepath1.yaml', 'filepath2.yaml', 'expect_file_yaml.txt', 'flat_file'],
   ['filepath1.json', 'filepath2.json', 'expect_file_json.txt', 'instead_file'],
   ['filepath1.yml', 'filepath2.yml', 'expect_file_yaml.txt', 'instead_file'],
   ['filepath1.yaml', 'filepath2.yaml', 'expect_file_yaml.txt', 'instead_file'],
