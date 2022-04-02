@@ -21,9 +21,9 @@ const pathExtendFiles = {
 };
 
 const testFiles = [
-  ['filepath1.json', 'filepath2.json'],
-  ['filepath1.yml', 'filepath2.yml'],
-  ['filepath1.yaml', 'filepath2.yaml'],
+  ['file1.json', 'file2.json'],
+  ['file1.yml', 'file2.yml'],
+  ['file1.yaml', 'file2.yaml'],
 ];
 
 test.each(testFiles)('test format stylish', (file1, file2) => {
