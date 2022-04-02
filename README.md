@@ -9,6 +9,10 @@
 
 [![asciicast](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ.svg)](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ)
 
-## Instead files
+## Stylish format
 
 [![asciicast](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56.svg)](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56)
+
+## Plain format
+
+[![asciicast](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5.svg)](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5)
