@@ -13,7 +13,7 @@ const parse = (fileName, fileData) => {
     return dataFromFile;
   }
 
-  return `Format not supported ${formatFile}`;
+  throw new Error(`Format not supported ${formatFile}`);
 };
 
 export default parse;
