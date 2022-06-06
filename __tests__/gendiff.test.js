@@ -21,19 +21,19 @@ const testFiles = [
   ['file1.yaml', 'file2.yaml'],
 ];
 
-test.each(testFiles)('test format stylish', (file1, file2) => {
+test.each(testFiles)('format stylish', (file1, file2) => {
   const result = gendiff(getFixturePath(file1), getFixturePath(file2));
   const correctResult = readFile(pathExtendFiles.stylish).toString();
   expect(result).toBe(correctResult);
 });
 
-test.each(testFiles)('test format plain', (file1, file2) => {
+test.each(testFiles)('format plain', (file1, file2) => {
   const result = gendiff(getFixturePath(file1), getFixturePath(file2), 'plain');
   const correctResult = readFile(pathExtendFiles.plain).toString();
   expect(result).toBe(correctResult);
 });
 
-test.each(testFiles)('test format json', (file1, file2) => {
+test.each(testFiles)('format json', (file1, file2) => {
   const result = gendiff(getFixturePath(file1), getFixturePath(file2), 'json');
   const correctResult = readFile(pathExtendFiles.json).toString();
   expect(result).toBe(correctResult);
