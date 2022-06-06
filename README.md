@@ -8,6 +8,7 @@
 [![Status](https://github.com/IvanSavDev/frontend-project-lvl2/actions/workflows/gendiff.yml/badge.svg)](https://github.com/IvanSavDev/frontend-project-lvl2/actions/workflows/gendiff.yml)
 
 ## Description
+
 Difference calculator is a program that perceives the difference between two data structures. This is a popular task and there are many online services to solve it, such as http://www.jsondiff.com/. probably used in test output or automatic usage tracking in config files.
 
 Utility features:
@@ -16,6 +17,7 @@ Utility features:
 * Report generation in plain text, style and json
 
 ## Installation
+
 Install dependencies
 ```
 make install
@@ -30,6 +32,7 @@ make test
 ```
 
 ## Use
+
 ```
 Usage: gendiff [options] <filepath1> <filepath2>
 Options:
@@ -37,18 +40,21 @@ Options:
   -f, --format [type]  output format [stylish, plain, json] (default: 'stylish')
   -h, --help           display help for command
 ```
-## Flat file
+
+## Examples
+
+### Flat file
 
 [![asciicast](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ.svg)](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ)
 
-## Stylish format
+### Stylish format
 
 [![asciicast](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56.svg)](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56)
 
-## Plain format
+### Plain format
 
 [![asciicast](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5.svg)](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5)
 
-## JSON format
+### JSON format
 
 [![asciicast](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU.svg)](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU)
