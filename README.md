@@ -1,4 +1,4 @@
-## Difference calculator
+# Difference calculator
 
 ### Hexlet tests and linter status:
 
