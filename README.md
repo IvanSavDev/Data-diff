@@ -1,60 +1,55 @@
-# Difference calculator
-
-### Hexlet tests and linter status:
+# Data diff
 
 [![Actions Status](https://github.com/IvanSavDev/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/IvanSavDev/frontend-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6afd2f68a5e2967de105/maintainability)](https://codeclimate.com/github/IvanSavDev/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6afd2f68a5e2967de105/test_coverage)](https://codeclimate.com/github/IvanSavDev/frontend-project-lvl2/test_coverage)
 [![Status](https://github.com/IvanSavDev/frontend-project-lvl2/actions/workflows/gendiff.yml/badge.svg)](https://github.com/IvanSavDev/frontend-project-lvl2/actions/workflows/gendiff.yml)
 
-## Description
+## Описание
 
-Difference calculator is a program that perceives the difference between two data structures. This is a popular task and there are many online services to solve it, such as http://www.jsondiff.com/. probably used in test output or automatic usage tracking in config files.
+Данная программа позволяет определять разницу между двумя форматами данных. Это популярная задача, для решения которой существует множество онлайн сервисов, например http://www.jsondiff.com/. Подобный механизм используется при выводе тестов или при автоматическом отслеживании изменении в конфигурационных файлах.
 
-Utility features:
+Возможности утилиты:
 
-* Support for different input formats: yaml, json
-* Report generation in plain text, style and json
+* Поддержка разных форматов ввода: yaml, json
+* Генерация отчетов в виде обычного текста и json
 
-## Installation
+## Установка
 
-Install dependencies
 ```
 make install
 ```
-Run eslint
-```
-make lint
-```
-Run tests
+
+## Запуск тестов
+
 ```
 make test
 ```
 
-## Use
+## Использование
 
 ```
-Usage: gendiff [options] <filepath1> <filepath2>
-Options:
-  -V, --version        output the version number
-  -f, --format [type]  output format [stylish, plain, json] (default: 'stylish')
-  -h, --help           display help for command
+Использование: gendiff [опции] <filepath1> <filepath2>
+Опции:
+  -V, --версия        показывает версию
+  -f, --формат [тип]  формат вывода [stylish, plain, json] (по умолчанию: 'stylish')
+  -h, --помощь        показать справку по команде
 ```
 
-## Examples
+## Примеры
 
-### Flat file
+### Flat файлы
 
 [![asciicast](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ.svg)](https://asciinema.org/a/W0QsE0hZ1FtY73nHcy1cjOwVZ)
 
-### Stylish format
+### Stylish формат
 
 [![asciicast](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56.svg)](https://asciinema.org/a/hlaMtPBXcChimvBZwvifP7h56)
 
-### Plain format
+### Plain формат
 
 [![asciicast](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5.svg)](https://asciinema.org/a/iweroEIm32MJChcEEuTaEnPp5)
 
-### JSON format
+### JSON формат
 
 [![asciicast](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU.svg)](https://asciinema.org/a/ZMeeth7GtlgSHHq7a7YUB2BHU)
